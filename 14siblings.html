@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $("h3").next().css({"border":"2px solid red"})
+            // $("h1").nextUntil("h3").css({"border":"2px solid blue"})
+            // $("h4").nextAll().css({"border":"2px solid yellow"})
+            $("p").siblings("h1").css({"border":"2px solid red"})
+            
+        })
+    </script>
+    <style>
+        body *{
+            border: 2px solid black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hii</h1>
+        <h2>Hello</h2>
+        <h3>How Are You?</h3>
+        <h4>class</h4>
+        <p>tops</p>
+        <h1>Good</h1>
+        <h5>Bye</h5>
+        <h6>Cancel</h6>
+    </div>
+</body>
+</html>

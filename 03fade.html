@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin-top: 10px;
+            color: white;
+            display: none;
+             /* ----------------only fadeIn==display: none;--------------- */
+        }
+    </style>
+</head>
+<body>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#one").fadeIn(), $("#two").fadeIn("slow"), $("#three").fadeIn(3000)
+                // $("#one").fadeOut(), $("#two").fadeOut("slow"), $("#three").fadeOut(3000)
+                // $("#one").fadeToggle(), $("#two").fadeToggle("slow"), $("#three").fadeToggle(3000)
+                $("#one").fadeTo(.2), $("#two").fadeTo("slow",.3), $("#three").fadeTo(3000,.3)
+            })
+        })
+    </script>
+    
+</body>
+</html>
